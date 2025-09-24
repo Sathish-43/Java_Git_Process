@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hire Talent - TalentBridge</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="pages.css">
+</head>
+<body>
+  <header class="header">
+    <div class="container">
+      <div class="logo">
+        <span class="logo-icon">💼</span>
+        <span class="logo-text">TalentBridge</span>
+      </div>
+      
+      <nav class="desktop-nav">
+        <div class="nav-item has-tooltip">
+          <a href="findwork.html">Find Projects</a>
+          <div class="tooltip">Browse Available Projects</div>
+        </div>
+        <div class="nav-item has-tooltip">
+          <a href="hiretalent.html">Find Talent</a>
+          <div class="tooltip">Discover Skilled Freelancers</div>
+        </div>
+        <a href="#" class="nav-item">How It Works</a>
+      </nav>
+      
+      <div class="auth-buttons">
+        <button class="btn-login">Log In</button>
+        <button class="btn-signup">Sign Up</button>
+      </div>
+      
+      <button class="mobile-menu-toggle" onclick="toggleMobileMenu()">☰</button>
+    </div>
+  </header>
+
+  <div class="mobile-menu">
+    <button class="close-menu" onclick="toggleMobileMenu()">✕</button>
+    <nav>
+      <a href="/findwork.html">Find Projects</a>
+      <a href="/hiretalent.html">Find Talent</a>
+      <a href="#">How It Works</a>
+      <hr>
+      <button class="btn-login-mobile">Log In</button>
+      <button class="btn-signup-mobile">Sign Up</button>
+    </nav>
+  </div>
+
+  <div class="mobile-menu-overlay" onclick="toggleMobileMenu()"></div>
+
+  <main>
+    <section class="page-hero">
+      <div class="container">
+        <h1>Find Expert <span>Freelancers</span></h1>
+        <p>Connect with talented professionals for your projects</p>
+        <div class="search-container">
+          <input type="text" placeholder="Search by skill or expertise..." class="search-input">
+          <button class="search-button">Search</button>
+        </div>
+      </div>
+    </section>
+
+    <section class="featured-freelancers">
+      <div class="container">
+        <h2>Top Rated Freelancers</h2>
+        <div class="freelancer-grid">
+          <div class="freelancer-card">
+            <div class="freelancer-header">
+              <div class="freelancer-avatar">JS</div>
+              <div class="freelancer-info">
+                <h3>John Smith</h3>
+                <span class="freelancer-title">Full Stack Developer</span>
+              </div>
+            </div>
+            <p>Experienced developer specializing in React and Node.js...</p>
+            <div class="freelancer-skills">
+              <span>React</span>
+              <span>Node.js</span>
+              <span>TypeScript</span>
+            </div>
+            <div class="freelancer-footer">
+              <span class="freelancer-rate">$65/hr</span>
+              <button class="btn-contact">Contact</button>
+            </div>
+          </div>
+          <div class="freelancer-card">
+            <div class="freelancer-header">
+              <div class="freelancer-avatar">SD</div>
+              <div class="freelancer-info">
+                <h3>Sarah Davis</h3>
+                <span class="freelancer-title">UI/UX Designer</span>
+              </div>
+            </div>
+            <p>Creative designer with a focus on user-centered design...</p>
+            <div class="freelancer-skills">
+              <span>Figma</span>
+              <span>UI Design</span>
+              <span>Prototyping</span>
+            </div>
+            <div class="freelancer-footer">
+              <span class="freelancer-rate">$55/hr</span>
+              <button class="btn-contact">Contact</button>
+            </div>
+          </div>
+          <div class="freelancer-card">
+            <div class="freelancer-header">
+              <div class="freelancer-avatar">MR</div>
+              <div class="freelancer-info">
+                <h3>Mike Ross</h3>
+                <span class="freelancer-title">Digital Marketer</span>
+              </div>
+            </div>
+            <p>Strategic marketer with expertise in social media...</p>
+            <div class="freelancer-skills">
+              <span>SEO</span>
+              <span>Social Media</span>
+              <span>Analytics</span>
+            </div>
+            <div class="freelancer-footer">
+              <span class="freelancer-rate">$45/hr</span>
+              <button class="btn-contact">Contact</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <script>
+    function toggleMobileMenu() {
+      document.body.classList.toggle('mobile-menu-open');
+    }
+  </script>
+</body>
+</html>

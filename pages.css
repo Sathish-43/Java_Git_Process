@@ -1,0 +1,253 @@
+/* Page-specific styles */
+.page-hero {
+    padding: 8rem 1rem 4rem;
+    background: linear-gradient(135deg, #eff6ff 0%, #ecfdf5 100%);
+    text-align: center;
+  }
+  
+  .page-hero h1 {
+    font-size: 2.5rem;
+    font-weight: 800;
+    margin-bottom: 1.5rem;
+    line-height: 1.2;
+    animation: fadeInUp 0.8s ease-out;
+  }
+  
+  .page-hero h1 span {
+    color: #2563eb;
+  }
+  
+  .page-hero p {
+    font-size: 1.25rem;
+    color: #4a5568;
+    max-width: 600px;
+    margin: 0 auto 2rem;
+    animation: fadeInUp 0.8s ease-out 0.2s backwards;
+  }
+  
+  .search-container {
+    max-width: 600px;
+    margin: 0 auto;
+    display: flex;
+    gap: 1rem;
+    animation: fadeInUp 0.8s ease-out 0.4s backwards;
+  }
+  
+  .search-input {
+    flex: 1;
+    padding: 1rem;
+    border: 2px solid #e5e7eb;
+    border-radius: 0.5rem;
+    font-size: 1rem;
+    transition: border-color 0.2s;
+  }
+  
+  .search-input:focus {
+    outline: none;
+    border-color: #2563eb;
+  }
+  
+  .search-button {
+    padding: 1rem 2rem;
+    background: #2563eb;
+    color: white;
+    border: none;
+    border-radius: 0.5rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.2s;
+  }
+  
+  .search-button:hover {
+    background: #1d4ed8;
+    transform: translateY(-1px);
+  }
+  
+  /* Featured Projects */
+  .featured-projects,
+  .featured-freelancers {
+    padding: 4rem 1rem;
+  }
+  
+  .featured-projects h2,
+  .featured-freelancers h2 {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 3rem;
+    color: #1a1a1a;
+  }
+  
+  .project-grid,
+  .freelancer-grid {
+    display: grid;
+    gap: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  @media (min-width: 768px) {
+    .project-grid,
+    .freelancer-grid {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+  
+  /* Project Card */
+  .project-card {
+    background: white;
+    border-radius: 1rem;
+    padding: 1.5rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+  }
+  
+  .project-card:hover {
+    transform: translateY(-5px);
+  }
+  
+  .project-category {
+    display: inline-block;
+    padding: 0.25rem 0.75rem;
+    background: #eff6ff;
+    color: #2563eb;
+    border-radius: 1rem;
+    font-size: 0.875rem;
+    margin-bottom: 1rem;
+  }
+  
+  .project-card h3 {
+    font-size: 1.25rem;
+    margin-bottom: 0.5rem;
+    color: #1a1a1a;
+  }
+  
+  .project-card p {
+    color: #4a5568;
+    margin-bottom: 1.5rem;
+  }
+  
+  .project-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .project-budget {
+    color: #2563eb;
+    font-weight: 600;
+  }
+  
+  .btn-apply {
+    padding: 0.5rem 1rem;
+    background: #2563eb;
+    color: white;
+    border: none;
+    border-radius: 0.5rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.2s;
+  }
+  
+  .btn-apply:hover {
+    background: #1d4ed8;
+    transform: translateY(-1px);
+  }
+  
+  /* Freelancer Card */
+  .freelancer-card {
+    background: white;
+    border-radius: 1rem;
+    padding: 1.5rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+  }
+  
+  .freelancer-card:hover {
+    transform: translateY(-5px);
+  }
+  
+  .freelancer-header {
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 1rem;
+  }
+  
+  .freelancer-avatar {
+    width: 3rem;
+    height: 3rem;
+    background: #2563eb;
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 600;
+  }
+  
+  .freelancer-info h3 {
+    font-size: 1.25rem;
+    margin-bottom: 0.25rem;
+    color: #1a1a1a;
+  }
+  
+  .freelancer-title {
+    color: #4a5568;
+    font-size: 0.875rem;
+  }
+  
+  .freelancer-card p {
+    color: #4a5568;
+    margin-bottom: 1rem;
+  }
+  
+  .freelancer-skills {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin-bottom: 1.5rem;
+  }
+  
+  .freelancer-skills span {
+    padding: 0.25rem 0.75rem;
+    background: #eff6ff;
+    color: #2563eb;
+    border-radius: 1rem;
+    font-size: 0.875rem;
+  }
+  
+  .freelancer-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .freelancer-rate {
+    color: #2563eb;
+    font-weight: 600;
+  }
+  
+  .btn-contact {
+    padding: 0.5rem 1rem;
+    background: #2563eb;
+    color: white;
+    border: none;
+    border-radius: 0.5rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.2s;
+  }
+  
+  .btn-contact:hover {
+    background: #1d4ed8;
+    transform: translateY(-1px);
+  }
+  
+  @media (max-width: 768px) {
+    .search-container {
+      flex-direction: column;
+    }
+    
+    .search-button {
+      width: 100%;
+    }
+  }
